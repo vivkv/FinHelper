@@ -1,0 +1,39 @@
+extends layout
+block content
+	body.bg-info
+		// Creating the navigation section and setting its background
+		nav.navbar.navbar-expand-md.navbar-dark.bg-dark.sticky-top
+			// Creating div for the container
+			.container-fluid
+				// Setting up the logo
+				.navbar-brand
+					img(src="/img/sap.png" alt="SAP logo" style="width:100px;")
+					span.text-align-center FinHelper
+				// Creating the button which will appear while resizing
+				button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarResponsive")
+					span.navbar-toggler-icon
+				// Creating the div for items in list form
+				#navbarResponsive.collapse.navbar-collapse
+					ul.navbar-nav.ml-auto
+						li.nav-item.active
+							a.nav-link(href="#")
+								| Sign In
+								// <button type="button" name="button">Sign In</button>
+						li.nav-item
+							a.nav-link(href="#")
+								| Add Solution
+								// <button type="button" name="button">Ask question</button>
+						li.nav-item
+							a.nav-link(href="#")
+								| Logout
+								// <button type="button" name="button">Logout</button>
+					// Closing the div for items in list form
+				// Closing div for the container
+			// Closing the navigation section and setting its background
+		// Creating part is for below navigation section
+		.input-group.customDiv
+			input.form-control(type="text" id="question" placeholder="Search here")
+			.input-group-append
+				button.btn.btn-secondary.customBtn(type="button" id="btn")
+					i.fa.fa-search
+		// Closing part for below  navigation section

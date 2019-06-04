@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  if errors
+    ul.my-errors
+      for error in errors
+        li= error.msg
+  form(action="." method="POST" class="input-group")
+    input(
+        type="text"
+        id="question"
+        name="question"
+        class="form-control"
+    )
+
+    input(type="submit" class="btn btn-secondary")
