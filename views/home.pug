@@ -9,6 +9,7 @@ block content
 				.navbar-brand
 					img(src="/img/sap.png" alt="SAP logo" style="width:100px;")
 					span.text-align-center FinHelper
+				#dest
 				// Creating the button which will appear while resizing
 				button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarResponsive")
 					span.navbar-toggler-icon
@@ -31,9 +32,10 @@ block content
 				// Closing div for the container
 			// Closing the navigation section and setting its background
 		// Creating part is for below navigation section
-		.input-group.customDiv
-			input.form-control(type="text" id="question" placeholder="Search here")
-			.input-group-append
-				button.btn.btn-secondary.customBtn(type="button" id="btn")
-					i.fa.fa-search
+		.bodyarea
+			.input-group.customDiv
+				input.form-control(type="text" id="question" placeholder="Search here")
+				.input-group-append
+					button.btn.btn-secondary.customBtn(type="button" id="btn")
+						i.fa.fa-search
 		// Closing part for below  navigation section

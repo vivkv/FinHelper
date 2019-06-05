@@ -1,4 +1,4 @@
-</<!DOCTYPE html>
+  </<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -21,6 +21,11 @@
           <img src="/img/sap.png" alt="SAP logo" style="width:100px;">
           <span class="text-align-center">FinHelper</span>
         </div>
+
+        <!-- Creating div for search bar destination -->
+        <div id="dest"></div>
+        <!--Closing div for search bar destination -->
+
         <!-- Creating the button which will appear while resizing -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
             <span class="navbar-toggler-icon"></span>
@@ -51,16 +56,18 @@
     <!-- Closing the navigation section and setting its background -->
     </nav>
 
-    <!-- Creating part is for below navigation section -->
-    <div class="input-group customDiv">
-      <input type="text" class="form-control" placeholder="Search here">
-      <div class="input-group-append">
-        <button class="btn btn-secondary customBtn" type="button">
-          <i class="fa fa-search"></i>
-        </button>
+    <!-- Creating part is for body section -->
+    <div class="bodyarea">
+      <div class="input-group customDiv">
+        <input type="text" class="form-control" placeholder="Search here">
+        <div class="input-group-append">
+          <button class="btn btn-secondary customBtn" type="button">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
       </div>
     </div>
-    <!-- Closing part for below  navigation section -->
+    <!-- Closing part for body section -->
 
   </body>
 </html>

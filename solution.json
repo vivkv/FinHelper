@@ -1,8 +1,10 @@
 {
-  "requires assignment to co object":"use transaction OKB9 and remove the G/L account for that company code",
-  "can only be posted internally":"use tcode FS00 and untick post automatically from control tab",
-  "inconsistencies in customization":"use tcode FINSC_LEDGER",
-  "posting period variant not assigned":"use Tcode ob52 to put those periods",
-  "business partner requires External assignment": "use SPRO to customize the cross application component and also assign the number ranges both from BP to vendors",
-  "Reconciliation account has not an entry":"Go to system in SAP easy access and go to user parameters and remove the default parameter BUK"
+  "requires":{
+    "requires 1":"use transaction OKB9 and remove the G/L account for that company code",
+    "requires 2":"use tcode FS00 and untick post automatically from control tab",
+    "requires 3":"use tcode FINSC_LEDGER",
+    "requires 4":"use Tcode ob52 to put those periods",
+    "requires 5": "use SPRO to customize the cross application component and also assign the number ranges both from BP to vendors",
+    "requires 6":"Go to system in SAP easy access and go to user parameters and remove the default parameter BUK"
+  }
 }

@@ -1,4 +1,5 @@
 const express = require('express');
+var bodyParser = require('body-parser');
 const { body, validationResult } = require('express-validator/check');
 const router = express.Router();
 const path = require('path');
@@ -11,12 +12,11 @@ router.get('/',(req,res)=>{
 
 router.post('/',(req,res)=>{
   //dummy data
-  console.log(req.que);
+  var que = req.body.que;
   fs.readFile('./solution.json','utf-8',(err,dat)=>{
     if (err) throw err;
-    data = JSON.parse(dat);
-    //data = JSON.stringify(data);
-    //console.log(req.query);
+    var data = JSON.parse(dat);
+    data = data[que];
     res.setHeader('Content-Type', 'application/json');
     res.send(data);
   });

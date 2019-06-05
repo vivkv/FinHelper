@@ -5,3 +5,22 @@
 .customBtn{
   width: 50px;
 }
+
+.icon-spin {
+  font-size: 1.5em;
+  display: inline-block;
+  animation: spin1 2s infinite linear;
+}
+
+@keyframes spin1{
+    0%{transform:rotate(0deg)}
+    100%{transform:rotate(359deg)}
+}
+
+.bodyarea{
+  padding: 50px;
+}
+
+.answers{
+  padding:50px;
+}
