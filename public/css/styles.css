@@ -22,5 +22,13 @@
 }
 
 .answers{
-  padding:50px;
+  padding:30px;
+  margin-bottom: 20px;
+}
+
+.up{
+  margin-right: 10px;
+  height: 30px;
+  width: 30px;
+  align: right;
 }
